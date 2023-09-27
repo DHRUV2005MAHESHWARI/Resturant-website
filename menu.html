@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
+</head>
+
+<style>
+    body {
+      background-image: url('https://i.pinimg.com/originals/ea/d6/2d/ead62de37377481be53a8a994ee406b8.jpg');
+      background-repeat:repeat-x;
+      background-position:left;
+      background-size:100%;
+      background-position-x:left;
+      background-position-y:top;
+      background-attachment:scroll;
+    }
+
+    body {margin:0;}
+
+    .navigationbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+    .navigationbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .navigationbar a:hover {
+    background: #ddd;
+    color: black;
+    }
+
+    .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+        font-family: sniglet;
+        color: thistle;
+    }
+
+    .heading {
+        font-size: 25px;
+        font-family: walterturncoat;
+        color: #F2AA4CFF;
+    }
+
+    .mainheading {
+        font-size: 30px;
+        font-family:cursive;
+        color: #F65058FF;
+    }
+
+    .mainblock {
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #f2f2f2;
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <div class="navigationbar" style="text-align:center; position: absolute;">
+        <a href="Assignment02.html" target="_self"><label>Back</label></a>
+    </div>
+</body>
+<br>
+<body>
+    <br>
+    <div id="page1">
+    <div style="float: left; width: 30%; padding-left: 130px; padding-top: 150px;">
+        <h2 class="mainheading">Soups</h2>
+        <ol>
+            <li class="paragraph">
+                <h2 class="heading">Tomato Soup</h2><span>Ahhh...You could never go wrong with this classic tomato soup, topped with italian seasoning, basil and big chunks of bread.</span>
+                <div style="text-align: right;">
+                <br>
+                <span style="color: darkseagreen;">Price: $5</span>
+                </div>
+            </li>
+            <li class="paragraph">
+                <h2 class="heading">Chicken Soup</h2><span>This tangy and spicy chicken soup is filled with indian spices, capsicum, onion, sweet corn and of course, chicken!</span>
+            <div style="text-align: right;">
+            <br>
+            <span style="color: darkseagreen;">Price: $10</span>
+            </div>
+        </li>
+        </ol>
+        <h2 class="mainheading">Main Course</h2>
+        <ol>
+            <li class="paragraph">
+                    <h2 class="heading">Thai Curry with Rice</h2><span>The chef's special, this Thai Curry is not only authentic, but is made from ingredients directly imported from the origin of this dish itself</span>
+                <div style="text-align: right;">
+                <br>
+                <span style="color:darkseagreen;">Price: $15</span>
+                </div>
+            </li>
+        </ol>
+        </div>
+
+        <div style="width: 30%; margin-left: 50%; padding-left: 130px; padding-top: 150px;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <ol>
+                <li class="paragraph">
+                        <h2 class="heading">Grilled Chicken Wrap</h2><span>This mouth watering meal is made with a tortilla wrap grilled on our finest BBQ, filled with harrissa and sweet onion sauces.</span>
+                    <div style="text-align: right;">
+                    <br>
+                    <span style="color: darkseagreen;">Price: $20</span>
+                    </div>
+                </li>
+                <li class="paragraph">
+                    <h2 class="heading">Tandoori Platter</h2><span>Available both in veg and non-veg, this platter consists of a mix 4 different dishes, with each dish having 5 pieces, making this a fulfilling meal for 1, or even 2!</span>
+                <div style="text-align: right;">
+                <br>
+                <span style="color: darkseagreen;">Price: $30</span>
+                </div>
+            </li>
+            </ol>
+            <h2 class="mainheading">Beverages</h2>
+            <ol>
+                <li class="paragraph">
+                        <h2 class="heading">Soft Drinks (500 ML)</h2><span>Pepsi, Sprite, Miranda, Lime-n-Lemon Limca, Mountain Dew, Ginger Ale, Fanta Grape & Lipton Ice Tea</span>
+                    <div style="text-align: right;">
+                    <br>
+                    <span style="color:darkseagreen;">Price: $2</span>
+                    </div>
+                </li>
+            </ol>
+            </div>
+        </li>
+        </ol>
+    </div>
+
+    <a href="#" onclick="return show('page2','page1');"><button style="margin-left: 90%;">Next Page</button></a>
+
+    <div id="page2" style="display: none;">
+        <div style="float: left; width: 30%; padding-left: 130px; padding-top: 150px;">
+            <br>
+            <br>
+            <br>
+            <ol start="2">
+                <li class="paragraph">
+                        <h2 class="heading">Blue Lagoon</h2><span>A French cocktail featuring Blue Curaçao syrup mixed with vodka/sprite and lemonade. Our personal favorite :D</span>
+                    <div style="text-align: right;">
+                    <br>
+                    <span style="color: darkseagreen;">Price: $7</span>
+                    </div>
+                </li>
+                <li class="paragraph">
+                    <h2 class="heading">Virgin Mojito</h2><span>This tangy and sweet beverage is made with Sprite, Lemon, Crushed Mint leaves and sugar. Some use Polo mints but we only use the best ingredients!</span>
+                <div style="text-align: right;">
+                <br>
+                <span style="color: darkseagreen;">Price: $7</span>
+                </div>
+            </li>
+            </ol>
+            <h2 class="mainheading">Desserts</h2>
+            <ol>
+                <li class="paragraph">
+                        <h2 class="heading">Ice Cream</h2><span>Choose from a variety of flavours that include chocolate, strawberry, vanilla, butterscotch and kesar pista :D</span>
+                    <div style="text-align: right;">
+                    <br>
+                    <span style="color:darkseagreen;">Price: $7</span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    
+        <div style="width: 30%; margin-left: 50%; padding-left: 130px; padding-top: 150px;">
+            <br>
+            <br>
+            <br>
+            <ol start="2">
+                <li class="paragraph">
+                    <h2 class="heading">Jay's Kitchen's Brownie</h2> <span>Crafted by our Pastry Chef, this brownie just oozes with hot chocolate syrup, tempered chocolate, and a molten lava center!</span>
+                    <div style="text-align: right;">
+                    <br>
+                    <span style="color: darkseagreen;">Price: $25</span>
+                    </div>
+                </li>
+                <li class="paragraph">
+                    <h2 class="heading">Jay's Kitchen's Frozen Red Velvet Dessert</h2><span>This special, made my Chef Jay himself, features a mix of ice creams with edible 23 carat gold placed in the middle of a red velvet pudding.</span>
+                    <div style="text-align: right;">
+                    <br>
+                    <span style="color: darkseagreen;">Price: $999</span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <a href="#" onclick="return show('page1','page2');"><button style="margin-left: 90%;">Previous Page</button></a>
+</body>
+</html>
